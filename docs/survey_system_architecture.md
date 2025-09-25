@@ -1,6 +1,6 @@
 # Smart Survey Generator Module - System Overview
 
-*Project Requirements Document - Module Overview*
+_Project Requirements Document - Module Overview_
 
 ## Executive Summary
 
@@ -17,6 +17,7 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 ## Key Features
 
 ### Core Functionality
+
 - **Multi-language Support:** Accept survey requirements in Turkish and English
 - **Intelligent Question Selection:** Multi-faceted question matching using semantic analysis, text matching, and metadata filtering
 - **Industry-Specific Customization:** Tailor surveys for specific industries (automotive, technology, healthcare, etc.)
@@ -24,6 +25,7 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 - **Real-time Generation:** Provide survey results within 5-10 seconds
 
 ### Technical Capabilities
+
 - **Multi-Modal Question Matching:** Advanced question selection using:
   - Exact match queries on question names and categories
   - Text-based filtering on descriptions and tags
@@ -43,23 +45,25 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 │   API Gateway   │───▶│   MCP Server    │───▶│   LLM Service   │
 │   (Interface)   │    │ (Core Logic)    │    │  (AI Analysis)  │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       
-         ▼                       ▼                       
-┌─────────────────┐    ┌─────────────────┐              
-│   Frontend UI   │    │   PostgreSQL    │              
-│   (Optional)    │    │   + Vector DB   │              
-└─────────────────┘    └─────────────────┘              
+         │                       │
+         ▼                       ▼
+┌─────────────────┐    ┌─────────────────┐
+│   Frontend UI   │    │   PostgreSQL    │
+│   (Optional)    │    │   + Vector DB   │
+└─────────────────┘    └─────────────────┘
 ```
 
 ### Core Services
 
 **MCP Server (Node.js)**
+
 - Request processing and orchestration
 - Database query management
 - Survey generation logic
 - Response formatting
 
 **Database Layer (PostgreSQL + Vector Extensions)**
+
 - Enhanced question repository with multilingual content
 - Hierarchical categories and themes with nested structures
 - Vector embeddings using BERT multilingual models
@@ -67,11 +71,13 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 - Cross-language semantic search capabilities
 
 **LLM Integration**
+
 - Request analysis and requirement extraction
 - Question selection optimization
 - Survey structure recommendations
 
 **Caching Layer (Redis)**
+
 - Query result caching
 - Session management
 - Performance optimization
@@ -83,6 +89,7 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 **Deployment Platform:** Google Cloud Platform (GKE)
 
 **Core Services:**
+
 - **Compute:** 2-4 CPU cores, 8GB RAM minimum
 - **Database:** Cloud SQL PostgreSQL with pgvector extension
 - **Cache:** Cloud Memorystore Redis
@@ -105,6 +112,7 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 - **Question Database:** 1000+ curated questions across multiple industries
 
 ### Scaling Configuration
+
 - **Auto-scaling:** 2-10 pod replicas based on CPU/memory usage
 - **Load Balancing:** Google Cloud Load Balancer
 - **High Availability:** Multi-zone deployment
@@ -115,16 +123,19 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 ### Survey Generation Process
 
 1. **Input Processing & Language Detection**
+
    - User submits natural language request (Turkish or English)
    - API Gateway validates request and detects language
    - Route to appropriate language processing pipeline
 
 2. **Requirement Analysis**
+
    - MCP Server analyzes request using multilingual LLM
    - Extract industry, question count, target metrics, language preference
    - Generate search keywords in both languages for broader matching
 
 3. **Multi-Modal Question Selection**
+
    - **Exact Match Queries:** Direct matching on question names and category IDs
    - **Filter-Based Search:** Category hierarchy, theme hierarchy, quality score thresholds
    - **Text Matching:** Full-text search on descriptions and tags using PostgreSQL's text search
@@ -132,11 +143,13 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
    - **Quality Ranking:** Score-weighted ranking of candidate questions
 
 4. **Cross-Language Enhancement**
+
    - Match Turkish requests with English questions and vice versa
    - Apply semantic similarity across language boundaries
    - Maintain language preference while expanding search scope
 
 5. **Survey Optimization**
+
    - LLM evaluates question combinations considering quality scores
    - Ensures metric coverage, category distribution, and logical flow
    - Optimizes question order and maintains language consistency
@@ -150,16 +163,19 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 ## Integration Points
 
 ### Input Interfaces
+
 - **REST API:** `/api/v1/generate-survey`
 - **Message Queue:** For asynchronous processing
 - **Webhook Support:** Real-time status updates
 
 ### Output Formats
+
 - **JSON Response:** Structured survey data
 - **Database Storage:** Persistent survey records
 - **Export Options:** PDF, CSV, JSON formats
 
 ### External Dependencies
+
 - **LLM Services:** OpenAI API or Google Vertex AI
 - **Authentication:** Integration with main project auth system
 - **Monitoring:** Prometheus metrics and logging integration
@@ -167,12 +183,14 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 ## Security & Compliance
 
 ### Data Protection
+
 - **Encryption:** At-rest and in-transit data encryption
 - **Access Control:** Role-based permissions
 - **API Security:** Rate limiting and authentication tokens
 - **Data Privacy:** No personal employee data storage
 
 ### Monitoring & Logging
+
 - **Performance Metrics:** Response times, success rates, resource usage
 - **Error Tracking:** Comprehensive error logging and alerting
 - **Audit Trail:** Complete request and generation history
@@ -181,6 +199,7 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 ## Development & Deployment
 
 ### Technology Stack
+
 - **Backend:** Node.js with Express framework
 - **Database:** PostgreSQL 14+ with pgvector and full-text search extensions
 - **ML Models:** BERT multilingual embeddings (bert-base-multilingual-cased)
@@ -190,6 +209,7 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 - **Infrastructure:** Terraform for infrastructure as code
 
 ### Deployment Strategy
+
 - **Environment Separation:** Dev, staging, production environments
 - **Blue-Green Deployment:** Zero-downtime deployments
 - **Database Migration:** Automated schema updates
@@ -198,12 +218,14 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 ## Success Metrics
 
 ### Functional KPIs
+
 - **Generation Success Rate:** > 95%
 - **User Satisfaction:** Surveys meet requirements accuracy > 90%
 - **Question Relevance:** Semantic matching accuracy > 85%
 - **System Reliability:** < 1% error rate
 
 ### Performance KPIs
+
 - **Average Response Time:** < 5 seconds
 - **Peak Concurrent Users:** 20+ simultaneous requests
 - **Database Query Performance:** < 500ms average
@@ -212,11 +234,13 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 ## Risk Assessment
 
 ### Technical Risks
+
 - **LLM API Limitations:** Rate limits and cost considerations
 - **Database Performance:** Vector search scalability
 - **Third-party Dependencies:** OpenAI/cloud service availability
 
 ### Mitigation Strategies
+
 - **Fallback Mechanisms:** Rule-based generation when LLM unavailable
 - **Caching Strategy:** Aggressive caching to reduce API calls
 - **Monitoring & Alerting:** Proactive issue detection and response
@@ -228,6 +252,7 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 **Development Strategy:** Utilizing AI agents (Claude Code) for task automation and code generation
 
 **Task Decomposition:**
+
 - **Atomic Development Tasks:** Break down into 2-4 hour focused tasks
 - **AI Agent Workflow:** Sequential task execution with human oversight
 - **Code Generation:** AI-assisted implementation with human review and integration
@@ -236,12 +261,14 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 ### Development Resources (AI-Assisted)
 
 **Human Oversight Team:**
+
 - **Technical Lead:** 0.5 FTE for architecture decisions and AI task coordination
 - **Integration Specialist:** 0.3 FTE for system integration and testing
 - **DevOps Specialist:** 0.3 FTE for deployment and infrastructure
 - **QA Reviewer:** 0.2 FTE for code review and quality assurance
 
 **AI Agent Task Allocation:**
+
 - **Backend Development:** 40+ atomic tasks (database models, API endpoints, business logic)
 - **Database Design:** 15+ tasks (schema creation, indexes, migrations)
 - **ML Integration:** 20+ tasks (BERT model integration, embedding pipeline)
@@ -249,40 +276,31 @@ The Smart Survey Generator is an AI-powered module that automatically creates cu
 
 **Total Human Effort:** ~1.3 FTE across 8-10 weeks (compared to 2.5 FTE traditional approach)
 
-### Infrastructure Costs (Monthly)
-- **GKE Cluster:** $300-500 (including BERT model serving nodes)
-- **Cloud SQL:** $150-250 (enhanced for vector operations)
-- **Redis Cache:** $75-125 (multilingual caching)
-- **BERT Model Serving:** $200-400 (dedicated GPU/CPU instances)
-- **LLM API Usage:** $150-400 (multilingual processing)
-- **Storage & Networking:** $75-125
-
-**Total Estimated:** $950-1800/month
-
 ## Implementation Timeline (AI-Assisted Development)
 
-### Phase 1: Foundation & ML Setup (3 weeks)
+### Phase 1: Foundation & ML Setup
+
 - **AI Tasks:** Database schema design, basic CRUD operations, BERT model integration
 - **Human Tasks:** Architecture review, model selection, infrastructure setup
 - **Deliverables:** Multilingual database, BERT embedding pipeline, basic API structure
 
-### Phase 2: Intelligence & Search (3 weeks)
+### Phase 2: Intelligence & Search
+
 - **AI Tasks:** Multi-modal search implementation, vector similarity, text matching algorithms
-- **Human Tasks:** Search strategy optimization, performance tuning, integration testing  
+- **Human Tasks:** Search strategy optimization, performance tuning, integration testing
 - **Deliverables:** Complete question selection engine, semantic search, quality ranking
 
-### Phase 3: LLM Integration & Optimization (2 weeks)
+### Phase 3: LLM Integration & Optimization
+
 - **AI Tasks:** LLM integration, request analysis, survey optimization logic
 - **Human Tasks:** Prompt engineering, multilingual testing, performance optimization
 - **Deliverables:** End-to-end survey generation, bilingual support
 
-### Phase 4: Production & Deployment (2 weeks)
+### Phase 4: Production & Deployment
+
 - **AI Tasks:** Monitoring dashboards, deployment scripts, documentation generation
 - **Human Tasks:** Security review, production deployment, load testing
 - **Deliverables:** Production-ready system with monitoring
-
-**Total Timeline:** 10 weeks (reduced from 12 weeks due to AI-assisted development)
-**Human Effort Reduction:** ~48% compared to traditional development approach
 
 ## Conclusion
 
