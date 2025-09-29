@@ -34,7 +34,7 @@
   
   <!-- File Upload Area -->
   <rect x="90" y="290" width="580" height="80" fill="white" stroke="#007bff" stroke-width="2" stroke-dasharray="5,5" rx="8"/>
-  <text x="350" y="320" font-family="Arial, sans-serif" font-size="14" fill="#007bff" text-anchor="middle">📁 Drag & Drop File or Click to Upload</text>
+  <text x="350" y="320" font-family="Arial, sans-serif" font-size="14" fill="#007bff" text-anchor="middle">📁 Drag - Drop File or Click to Upload</text>
   <text x="350" y="340" font-family="Arial, sans-serif" font-size="12" fill="#6c757d" text-anchor="middle">Supports: Excel (.xlsx), CSV (.csv)</text>
   <text x="350" y="355" font-family="Arial, sans-serif" font-size="12" fill="#28a745" text-anchor="middle">✓ team_structure.xlsx uploaded</text>
   
