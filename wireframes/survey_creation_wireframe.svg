@@ -1,0 +1,176 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f0f0f0" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="900" fill="white"/>
+  <rect width="1400" height="900" fill="url(#grid)"/>
+  
+  <!-- Title -->
+  <text x="70" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">SurveyAI - Survey Creation Conversation Interface</text>
+  
+  <!-- Main Container -->
+  <rect x="50" y="80" width="1300" height="750" fill="white" stroke="#e1e5e9" stroke-width="2" rx="12"/>
+  
+  <!-- Header -->
+  <rect x="50" y="80" width="1300" height="70" fill="#f8f9fa" stroke="#e1e5e9" stroke-width="1" rx="12 12 0 0"/>
+  <text x="80" y="125" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#2c3e50">🎯 Survey Creation Assistant</text>
+  <rect x="1100" y="95" width="200" height="40" fill="#28a745" stroke="none" rx="6"/>
+  <text x="1200" y="118" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">🏢 Org: ACME Corp (47 people)</text>
+  
+  <!-- Main Layout -->
+  <!-- Left Side: Conversation -->
+  <rect x="70" y="170" width="750" height="640" fill="white" stroke="#e1e5e9" stroke-width="1"/>
+  <text x="90" y="200" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#495057">💬 Survey Design Conversation</text>
+  
+  <!-- AI Suggestions Panel -->
+  <rect x="90" y="220" width="710" height="120" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="8"/>
+  <text x="110" y="240" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">🤖 AI Assistant</text>
+  <text x="110" y="255" font-family="Arial, sans-serif" font-size="14" fill="#212529">Your organization looks ready! I noticed you have several agile teams.</text>
+  <text x="110" y="270" font-family="Arial, sans-serif" font-size="14" fill="#212529">Based on your structure, I could suggest some surveys:</text>
+  
+  <!-- Suggested Surveys -->
+  <rect x="110" y="280" width="180" height="25" fill="#007bff" stroke="none" rx="4"/>
+  <text x="200" y="297" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">🎯 Team Health Check</text>
+  
+  <rect x="300" y="280" width="180" height="25" fill="#007bff" stroke="none" rx="4"/>
+  <text x="390" y="297" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">🚀 Agile Maturity</text>
+  
+  <rect x="490" y="280" width="180" height="25" fill="#007bff" stroke="none" rx="4"/>
+  <text x="580" y="297" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">👥 Cross-team Collab</text>
+  
+  <rect x="110" y="310" width="180" height="25" fill="#007bff" stroke="none" rx="4"/>
+  <text x="200" y="327" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">📈 Leadership Effectiveness</text>
+  
+  <text x="110" y="325" font-family="Arial, sans-serif" font-size="12" fill="#1976d2">Would you like me to create one of these, or do you have something specific in mind?</text>
+  
+  <!-- User Custom Request -->
+  <rect x="150" y="350" width="650" height="75" fill="#e8f5e8" stroke="#28a745" stroke-width="1" rx="15"/>
+  <text x="170" y="370" font-family="Arial, sans-serif" font-size="14" fill="#155724">👤 User: I want something custom. Create a survey about team bonding</text>
+  <text x="170" y="385" font-family="Arial, sans-serif" font-size="14" fill="#155724">and commitment. 10 multiple choice questions, max 10 minutes to complete.</text>
+  <text x="170" y="400" font-family="Arial, sans-serif" font-size="14" fill="#155724">Make it Turkish and target our Payment Squad team.</text>
+  
+  <!-- AI Clarification -->
+  <rect x="90" y="435" width="710" height="100" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="8"/>
+  <text x="110" y="455" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">🤖 AI Assistant</text>
+  <text x="110" y="470" font-family="Arial, sans-serif" font-size="14" fill="#212529">Perfect! Let me confirm the requirements:</text>
+  <text x="130" y="490" font-family="Arial, sans-serif" font-size="13" fill="#495057">• Topic: Team bonding and commitment</text>
+  <text x="130" y="505" font-family="Arial, sans-serif" font-size="13" fill="#495057">• Format: 10 multiple choice questions</text>
+  <text x="130" y="520" font-family="Arial, sans-serif" font-size="13" fill="#495057">• Duration: Maximum 10 minutes ⏱️</text>
+  <text x="400" y="490" font-family="Arial, sans-serif" font-size="13" fill="#495057">• Language: Turkish 🇹🇷</text>
+  <text x="400" y="505" font-family="Arial, sans-serif" font-size="13" fill="#495057">• Target: Payment Squad (8 people)</text>
+  <text x="400" y="520" font-family="Arial, sans-serif" font-size="13" fill="#495057">• Culture: Tech/Agile context</text>
+  
+  <!-- Action Buttons -->
+  <rect x="90" y="545" width="120" height="35" fill="#28a745" stroke="none" rx="6"/>
+  <text x="150" y="567" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">✅ Generate Survey</text>
+  
+  <rect x="220" y="545" width="100" height="35" fill="#6c757d" stroke="none" rx="6"/>
+  <text x="270" y="567" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">🔧 Modify</text>
+  
+  <rect x="330" y="545" width="100" height="35" fill="#17a2b8" stroke="none" rx="6"/>
+  <text x="380" y="567" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">📊 Preview</text>
+  
+  <!-- Progress Indicator -->
+  <rect x="90" y="590" width="710" height="40" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="6"/>
+  <text x="110" y="610" font-family="Arial, sans-serif" font-size="12" fill="#e65100">🔄 Generating survey questions based on Turkish business culture and Payment Squad context...</text>
+  
+  <!-- Generated Survey Preview -->
+  <rect x="90" y="640" width="710" height="80" fill="#e8f5e8" stroke="#28a745" stroke-width="1" rx="8"/>
+  <text x="110" y="660" font-family="Arial, sans-serif" font-size="12" fill="#155724">✅ Survey Generated! "Takım Bağlılığı ve Motivasyon Anketi"</text>
+  <text x="110" y="675" font-family="Arial, sans-serif" font-size="12" fill="#495057">10 questions | Estimated 8 minutes | Turkish | Payment Squad context</text>
+  <text x="110" y="690" font-family="Arial, sans-serif" font-size="12" fill="#495057">Sample: "Takımınızla birlikte çalışmaktan ne kadar memnunsunuz?"</text>
+  
+  <rect x="600" y="645" width="80" height="25" fill="#007bff" stroke="none" rx="4"/>
+  <text x="640" y="660" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Full Preview</text>
+  
+  <rect x="690" y="645" width="60" height="25" fill="#28a745" stroke="none" rx="4"/>
+  <text x="720" y="660" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Deploy</text>
+  
+  <!-- User Input Area -->
+  <rect x="90" y="750" width="710" height="50" fill="white" stroke="#ced4da" stroke-width="1" rx="25"/>
+  <text x="110" y="775" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">Continue conversation or ask for modifications...</text>
+  <circle cx="750" cy="775" r="15" fill="#007bff"/>
+  <text x="745" y="780" font-family="Arial, sans-serif" font-size="12" fill="white">→</text>
+  
+  <!-- Right Side: Context Panel -->
+  <rect x="840" y="170" width="490" height="640" fill="white" stroke="#e1e5e9" stroke-width="1"/>
+  <text x="860" y="200" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#495057">📋 Context Panel</text>
+  
+  <!-- Organization Context -->
+  <rect x="860" y="220" width="450" height="140" fill="#f8f9fa" stroke="#e9ecef" stroke-width="1" rx="8"/>
+  <text x="880" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#495057">🏢 Available Teams</text>
+  
+  <!-- Team List -->
+  <rect x="880" y="250" width="200" height="25" fill="#007bff" stroke="none" rx="4"/>
+  <text x="980" y="267" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Payment Squad (8 people) ⭐</text>
+  
+  <rect x="880" y="280" width="200" height="25" fill="#6c757d" stroke="none" rx="4"/>
+  <text x="980" y="297" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Platform Team (12 people)</text>
+  
+  <rect x="880" y="310" width="200" height="25" fill="#6c757d" stroke="none" rx="4"/>
+  <text x="980" y="327" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">DevOps Guild (6 people)</text>
+  
+  <!-- Context Indicators -->
+  <rect x="1100" y="250" width="190" height="100" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="6"/>
+  <text x="1120" y="270" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#e65100">🌍 Detected Context</text>
+  <text x="1120" y="285" font-family="Arial, sans-serif" font-size="11" fill="#495057">• Industry: Technology</text>
+  <text x="1120" y="300" font-family="Arial, sans-serif" font-size="11" fill="#495057">• Structure: Agile/Scrum</text>
+  <text x="1120" y="315" font-family="Arial, sans-serif" font-size="11" fill="#495057">• Culture: Turkish</text>
+  <text x="1120" y="330" font-family="Arial, sans-serif" font-size="11" fill="#495057">• Size: Scale-up (47 people)</text>
+  
+  <!-- Survey Templates -->
+  <rect x="860" y="380" width="450" height="160" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="8"/>
+  <text x="880" y="400" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#1976d2">🎯 Quick Survey Templates</text>
+  
+  <!-- Template Cards -->
+  <rect x="880" y="410" width="130" height="60" fill="white" stroke="#e1e5e9" stroke-width="1" rx="6"/>
+  <text x="945" y="430" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#495057" text-anchor="middle">Team Health</text>
+  <text x="945" y="445" font-family="Arial, sans-serif" font-size="9" fill="#6c757d" text-anchor="middle">15 questions</text>
+  <text x="945" y="458" font-family="Arial, sans-serif" font-size="9" fill="#6c757d" text-anchor="middle">12-15 min</text>
+  
+  <rect x="1020" y="410" width="130" height="60" fill="white" stroke="#e1e5e9" stroke-width="1" rx="6"/>
+  <text x="1085" y="430" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#495057" text-anchor="middle">Engagement</text>
+  <text x="1085" y="445" font-family="Arial, sans-serif" font-size="9" fill="#6c757d" text-anchor="middle">12 questions</text>
+  <text x="1085" y="458" font-family="Arial, sans-serif" font-size="9" fill="#6c757d" text-anchor="middle">10-12 min</text>
+  
+  <rect x="1160" y="410" width="130" height="60" fill="white" stroke="#e1e5e9" stroke-width="1" rx="6"/>
+  <text x="1225" y="430" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#495057" text-anchor="middle">Culture Fit</text>
+  <text x="1225" y="445" font-family="Arial, sans-serif" font-size="9" fill="#6c757d" text-anchor="middle">8 questions</text>
+  <text x="1225" y="458" font-family="Arial, sans-serif" font-size="9" fill="#6c757d" text-anchor="middle">6-8 min</text>
+  
+  <rect x="880" y="480" width="130" height="60" fill="white" stroke="#e1e5e9" stroke-width="1" rx="6"/>
+  <text x="945" y="500" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#495057" text-anchor="middle">Leadership</text>
+  <text x="945" y="515" font-family="Arial, sans-serif" font-size="9" fill="#6c757d" text-anchor="middle">20 questions</text>
+  <text x="945" y="528" font-family="Arial, sans-serif" font-size="9" fill="#6c757d" text-anchor="middle">18-20 min</text>
+  
+  <rect x="1020" y="480" width="130" height="60" fill="white" stroke="#e1e5e9" stroke-width="1" rx="6"/>
+  <text x="1085" y="500" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#495057" text-anchor="middle">Innovation</text>
+  <text x="1085" y="515" font-family="Arial, sans-serif" font-size="9" fill="#6c757d" text-anchor="middle">10 questions</text>
+  <text x="1085" y="528" font-family="Arial, sans-serif" font-size="9" fill="#6c757d" text-anchor="middle">8-10 min</text>
+  
+  <rect x="1160" y="480" width="130" height="60" fill="#e8f5e8" stroke="#28a745" stroke-width="2" rx="6"/>
+  <text x="1225" y="500" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#155724" text-anchor="middle">Custom</text>
+  <text x="1225" y="515" font-family="Arial, sans-serif" font-size="9" fill="#28a745" text-anchor="middle">Your specs</text>
+  <text x="1225" y="528" font-family="Arial, sans-serif" font-size="9" fill="#28a745" text-anchor="middle">In progress...</text>
+  
+  <!-- Smart Features -->
+  <rect x="860" y="560" width="450" height="120" fill="#f0f0f0" stroke="#ced4da" stroke-width="1" rx="8"/>
+  <text x="880" y="580" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#495057">🧠 AI Features Active</text>
+  
+  <text x="880" y="600" font-family="Arial, sans-serif" font-size="12" fill="#28a745">✅ Cultural context awareness (Turkish business)</text>
+  <text x="880" y="615" font-family="Arial, sans-serif" font-size="12" fill="#28a745">✅ Team structure optimization</text>
+  <text x="880" y="630" font-family="Arial, sans-serif" font-size="12" fill="#28a745">✅ Industry-specific language</text>
+  <text x="880" y="645" font-family="Arial, sans-serif" font-size="12" fill="#28a745">✅ Agile methodology alignment</text>
+  <text x="880" y="660" font-family="Arial, sans-serif" font-size="12" fill="#ff9800">🔄 Real-time question generation</text>
+  
+  <!-- Status Indicator -->
+  <circle cx="880" cy="720" r="6" fill="#28a745"/>
+  <text x="895" y="725" font-family="Arial, sans-serif" font-size="11" fill="#28a745">Context Engine Active</text>
+  
+  <circle cx="1050" cy="720" r="6" fill="#007bff"/>
+  <text x="1065" y="725" font-family="Arial, sans-serif" font-size="11" fill="#007bff">Survey Generation Ready</text>
+</svg>
